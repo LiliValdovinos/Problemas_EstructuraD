@@ -17,3 +17,4 @@ Problema 2: LeetCode 121. Best Time to Buy and Sell Stock
 Problema 3: 111. Minimum Depth of Binary Tree
 - https://leetcode.com/problems/minimum-depth-of-binary-tree/description/
 - https://leetcode.com/problems/minimum-depth-of-binary-tree/submissions/1462235278/
+- https://youtu.be/vseR0TOMwuU
