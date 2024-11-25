@@ -12,6 +12,7 @@ Problema 1: LeetCode 969. Pancake Sorting
 Problema 2: LeetCode 121. Best Time to Buy and Sell Stock
 - https://leetcode.com/problems/best-time-to-buy-and-sell-stock/description/
 - https://leetcode.com/problems/best-time-to-buy-and-sell-stock/submissions/1462232108/
+- https://youtu.be/g7Jh5MnRcUs
 
 Problema 3: 111. Minimum Depth of Binary Tree
 - https://leetcode.com/problems/minimum-depth-of-binary-tree/description/
