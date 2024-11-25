@@ -1,0 +1,23 @@
+#include <vector>
+#include <algorithm> 
+
+class Solution {
+public:
+    int maxProfit(std::vector<int>& prices) {
+        if (prices.empty()) return 0;
+
+        int minPrice = prices[0]; // Precio minimo inicial
+        int maxProfit = 0; // Maximo beneficio inicializado en 0
+
+        for (int i = 1; i < prices.size(); ++i) {
+            // Calculamos el beneficio si se vende hoy
+            int profit = prices[i] - minPrice;
+            // Actualizamos el maximo beneficio si el beneficio actual es mayor
+            maxProfit = std::max(maxProfit, profit);
+            // Actualizamos el precio minimo
+            minPrice = std::min(minPrice, prices[i]);
+        }
+
+        return maxProfit;
+    }
+};
