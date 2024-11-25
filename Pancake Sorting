@@ -1,0 +1,29 @@
+#include <vector>
+#include <algorithm>
+
+class Solution {
+public:
+    std::vector<int> pancakeSort(std::vector<int>& arr) {
+        std::vector<int> flips;
+        int n = arr.size();
+        
+        // Procesamos desde el final del array hasta el inicio
+        for (int size = n; size > 1; --size) {
+            // Encontramos la posicion del mayor elemento en la porcion actual
+            int maxIndex = std::max_element(arr.begin(), arr.begin() + size) - arr.begin();
+            
+            // Si el mayor elemento no esta ya en su posición final...
+            if (maxIndex != size - 1) {
+                // Si no esta en la posición de inicio, lo llevamos al inicio con un flip
+                if (maxIndex != 0) {
+                    flips.push_back(maxIndex + 1);  // Registramos el flip
+                    std::reverse(arr.begin(), arr.begin() + maxIndex + 1);
+                }
+                // Luego lo llevamos a su posicion final con otro flip
+                flips.push_back(size);  // Registramos el flip
+                std::reverse(arr.begin(), arr.begin() + size);
+            }
+        }
+        return flips;
+    }
+};
